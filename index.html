@@ -6,12 +6,16 @@
     <link rel="stylesheet" href="vendor/styles/normalize.css">
     <link rel="stylesheet" href="vendor/styles/skeleton.css">
     <link rel="stylesheet" href="style.css">
+    <script src='https://code.jquery.com/jquery-2.2.1.min.js'></script>
 
   </head>
   <body>
     <section id='head'>
       <header id= 'logo' class = 'twelve columns'><img class= 'twelve columns' src='https://images.unsplash.com/photo-1453282716202-de94e528067c?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=ac9b38e57a8a0724058cdcbe6a687aa8'>
         <h1>This is my portfolio!</h1>
+        <div class="">
+          <p><a href='https://github.com/muddybeard210'>See my work on GitHub</a></p>
+        </div>
 
 
       </header>
@@ -25,21 +29,24 @@
         </ul>
       </nav>
     </section>
-    <section class='projects'>
-      <div id='projectOne' class='three columns'>
+    <section id='articles' class='project three columns'>
 
-      </div>
+      <article class="projectPiece">
+        <img src='imgs/pompeii.png'/>
+        <p class='projectTitle'>Project Name</p>
+        <p class='projectDesc'>Project Description</p>
 
-    </section>
-    <section id='foot'>
-      <footer>
-        <p><a href=''>GitHub Account<a></p>
-          <p></p>
+      </article>
 
-      </footer>
+
 
     </section>
 
 
+
+
+
+    <script src = 'projects.js'></script>
+    <script src = 'app.js'></script>
   </body>
 </html>
