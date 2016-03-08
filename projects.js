@@ -5,5 +5,5 @@ var rawData = [
     url: 'http://andrewpeterwatson.github.io/Swift',
     img: 'imgs/pompeii.png',
     publishedOn: '02-29-2016'
-  },
+  }
 ];
