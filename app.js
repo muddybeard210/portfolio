@@ -9,7 +9,7 @@ function Article (project) {
 };
 
 Article.prototype.toHtml = function() {
-  var $newArticle = $('section.project').clone();
+  var $newArticle = $('section.project.template').clone();
 
   $newArticle.find('.projectTitle').text(this.title);
   $newArticle.find('.projectPiece a').attr('href', this.url);
@@ -17,14 +17,27 @@ Article.prototype.toHtml = function() {
   $newArticle.find('.projectDesc').text(this.description);
 
 
-  $newArticle.append('<hr>');
+  // $newArticle.append('<hr>');
 
-  // $newArticle.removeClass('template');
+  $newArticle.removeClass('template');
+
+
 
   return $newArticle;
 };
 
+$('#projectBtn').on('click', function(e) {
+  e.preventDefault();
+  $('.project').removeAttr('hidden');
+  $('#about').attr('hidden', true);
 
+});
+$('#aboutBtn').on('click', function(e) {
+  e.preventDefault();
+  $('.project').attr('hidden', true);
+  $('#about').removeAttr('hidden');
+
+});
 
 
 rawData.forEach(function(ele) {
@@ -33,6 +46,8 @@ rawData.forEach(function(ele) {
 });
 
 articles.forEach(function(a){
-  $('section.project').append(a.toHtml());
+  $('section.project').parent().append(a.toHtml());
   console.log('running2');
 });
+
+$('.template').hide();
