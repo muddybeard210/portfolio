@@ -9,45 +9,42 @@ function Article (project) {
 };
 
 Article.prototype.toHtml = function() {
-  var $newArticle = $('section.project.template').clone();
-
-  $newArticle.find('.projectTitle').text(this.title);
-  $newArticle.find('.projectPiece a').attr('href', this.url);
-  $newArticle.find('.projectPiece img').attr('src', this.img);
-  $newArticle.find('.projectDesc').text(this.description);
-
-
-  // $newArticle.append('<hr>');
-
+  var theTemplateScript = $('#articles-template').text();
+  var theTemplate = Handlebars.compile(theTemplateScript);
+  return theTemplate(this);
   $newArticle.removeClass('template');
-
-
-
-  return $newArticle;
 };
 
 $('#projectBtn').on('click', function(e) {
   e.preventDefault();
   $('.project').removeAttr('hidden');
   $('#about').attr('hidden', true);
+  $('#contact').attr('hidden', true);
+
 
 });
 $('#aboutBtn').on('click', function(e) {
   e.preventDefault();
   $('.project').attr('hidden', true);
+  $('#contact').attr('hidden', true);
   $('#about').removeAttr('hidden');
+
+});
+$('#contactBtn').on('click', function(e) {
+  e.preventDefault();
+  $('.project').attr('hidden', true);
+  $('#about').attr('hidden', true);
+  $('#contact').removeAttr('hidden');
 
 });
 
 
 rawData.forEach(function(ele) {
   articles.push(new Article(ele));
-  console.log('running');
 });
 
 articles.forEach(function(a){
   $('section.project').parent().append(a.toHtml());
-  console.log('running2');
 });
 
 $('.template').hide();

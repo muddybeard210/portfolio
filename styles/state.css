@@ -1,0 +1,14 @@
+article img:hover {
+  opacity: 1;
+  /*height:14rem;
+  width: 21em;*/
+}
+.button:hover {
+  color: grey;
+}
+#contact a img:hover {
+  border-radius: 20em;
+  box-shadow: 0 0 1em white;
+  background-color: white;
+
+}

@@ -1,0 +1,74 @@
+header div {
+  margin-left: 4rem;
+  position: absolute;
+  color: #FFFDF4;
+  margin-top: 3em;
+}
+header {
+  height: 1rem;
+
+}
+header img {
+  height: 37rem;
+  max-width: 100%;
+  box-shadow: 0 0 1em white;
+  border-radius: 5px;
+
+}
+div a {
+  position: absolute;
+  width: 15em;
+  margin-top: 1rem;
+}
+footer p {
+  text-align: center;
+}
+
+#about {
+  position: absolute;
+  margin-top: 50rem;
+  color: #FFFDF4;
+
+}
+#contact {
+  margin-top: 50rem;
+}
+
+#contact a img {
+  height: 15em;
+  width: 15em;
+  margin-left: 10em;
+}
+
+/*#contact a img:hover {
+  border-radius: 3em;
+  box-shadow: 0 0 1em white;
+
+}*/
+#mePic {
+  float:left;
+  height: 15em;
+  width: 16em;
+  border-radius: 15em;
+}
+#mePic2 {
+  float: right;
+  height: 15em;
+  width: 16em;
+  border-radius: 15em;
+}
+#github {
+  position: absolute;
+  margin-top: 1em;
+}
+@media (max-width: 400px) {
+  div a {
+    margin-top: 4em;
+    margin-right: 2em;
+  }
+  #contact a img {
+    height: 15em;
+    width: 15em;
+    margin-left: 2em;
+  }
+}
