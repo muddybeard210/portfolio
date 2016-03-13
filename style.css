@@ -1,7 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Varela+Round);
-/** {
-  border: 2px dotted blue;
-}*/
+
 
 header h1 {
   margin-left: 1rem;
@@ -13,15 +11,23 @@ header div {
   margin-left: 4rem;
   position: absolute;
   color: #FFFDF4;
-  margin-top: 5rem;
+  margin-top: 3em;
 }
 header {
   height: 1rem;
-  /*background-image: url('https://images.unsplash.com/photo-1453282716202-de94e528067c?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=ac9b38e57a8a0724058cdcbe6a687aa8');*/
+
 }
 header img {
   height: 37rem;
   max-width: 100%;
+  box-shadow: 0 0 1em white;
+  border-radius: 5px;
+
+}
+div a {
+  position: absolute;
+  width: 15em;
+  margin-top: 1rem;
 }
 body {
   background-color: #072027;
@@ -37,27 +43,16 @@ ul li {
   /*margin-top: 37rem;*/
   font-size: 3em;
   font-family: 'Varela Round', sans-serif;
+  margin-top: .5em;
 }
-/*#foot {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-  background-color: #efefef;
-  text-align: center;
-  margin-top: 1em;
-}*/
+
 footer p {
   text-align: center;
 }
 
-article p{
-  /*margin-left: 15em;*/
 
-  color: #FFFDF4;
-  /*text-align: center;*/
-}
+
+
 article img {
   height: 100%;
   width: 100%;
@@ -72,16 +67,30 @@ article img:hover {
   /*height:14rem;
   width: 21em;*/
 }
-/*.project {
-  margin-left: 9rem;
-  padding: 1rem;
-}*/
+
 #about {
   position: absolute;
   margin-top: 50rem;
   color: #FFFDF4;
 
 }
+#mePic {
+  float:left;
+  height: 15em;
+  width: 16em;
+  border-radius: 15em;
+}
+#mePic2 {
+  float: right;
+  height: 15em;
+  width: 16em;
+  border-radius: 15em;
+}
+#github {
+  position: absolute;
+  margin-top: 1em;
+}
+
 .button {
   color: #FFFDF4;
   font-size: 2rem;
@@ -89,4 +98,11 @@ article img:hover {
 }
 .button:hover {
   color: grey;
+}
+
+@media (max-width: 400px) {
+  div a {
+    margin-top: 4em;
+    margin-right: 2em;
+  }
 }
