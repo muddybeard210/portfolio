@@ -6,9 +6,21 @@
     <title>Sheridan-Smith Designs</title>
     <link rel="stylesheet" href="vendor/styles/normalize.css">
     <link rel="stylesheet" href="vendor/styles/skeleton.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/module.css">
+    <link rel="stylesheet" href="styles/state.css">
+    <link rel="stylesheet" href="styles/theme.css">
     <script src='https://code.jquery.com/jquery-2.2.1.min.js'></script>
-
+    <script id="articles-template" type="text/x-handlebars-template">
+      <section id='test' class='project three columns container' hidden>
+        <article class="projectPiece">
+          <a href='{{url}}'><img src='{{img}}'/></a>
+          <p class='projectTitle'>{{title}}</p>
+          <p class='projectDesc'>{{description}}</p>
+        </article>
+      </section>
+    </script>
   </head>
   <body class='container'>
     <section id='head'>
@@ -39,15 +51,12 @@
 
     </section>
     <section id='test' class='project three columns template container' hidden>
+    </section>
 
-      <article class="projectPiece">
-        <a href=''><img src=''/></a>
-        <p class='projectTitle'>Project Name</p>
-        <p class='projectDesc'>Project Description</p>
-
-      </article>
-
-
+    <section id='contact' hidden>
+      <a id='gitHubLink' href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2000px-Octicons-mark-github.svg.png" alt="" /></a>
+      <a class= 'square' href="#"><img src="http://vignette1.wikia.nocookie.net/tigerscurse/images/f/fc/Icon_facebook-b.png" alt="" /></a>
+      <a class= 'square' href="#"><img src="https://www.blockspring.com/assets/linkedin-mark-dark-eeabe25e798ab7fb1bc93f791fcdc2ff.png" alt="" /></a>
 
     </section>
 
@@ -55,7 +64,7 @@
 
 
 
-
+    <script src = 'https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js'></script>
     <script src = 'projects.js'></script>
     <script src = 'app.js'></script>
   </body>
