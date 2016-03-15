@@ -23,12 +23,18 @@ div a {
 footer p {
   text-align: center;
 }
+.projectTitle {
+  font-size: 1.5em;
+}
 
 #about {
   position: absolute;
   margin-top: 50rem;
   color: #FFFDF4;
 
+}
+#about p{
+  margin-top: 5em;
 }
 #contact {
   margin-top: 50rem;
@@ -37,7 +43,7 @@ footer p {
 #contact a img {
   height: 15em;
   width: 15em;
-  margin-left: 10em;
+  margin-left: 5em;
 }
 
 /*#contact a img:hover {
@@ -61,6 +67,16 @@ footer p {
   position: absolute;
   margin-top: 1em;
 }
+#contactEmail {
+  position: absolute;
+  margin-top: 2em;
+  font-size: 1.5em;
+}
+#contactEmail a {
+  text-decoration: none;
+  color: white;
+
+}
 @media (max-width: 400px) {
   div a {
     margin-top: 4em;
@@ -70,5 +86,11 @@ footer p {
     height: 15em;
     width: 15em;
     margin-left: 2em;
+  }
+  #contact a img {
+    border-radius: 20em;
+    box-shadow: 0 0 1em white;
+    background-color: white;
+
   }
 }

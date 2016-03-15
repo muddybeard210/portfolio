@@ -4,11 +4,16 @@ article img:hover {
   width: 21em;*/
 }
 .button:hover {
-  color: grey;
+  color: #072027;
+  background-color: white;
 }
 #contact a img:hover {
   border-radius: 20em;
   box-shadow: 0 0 1em white;
   background-color: white;
 
+}
+.clicked {
+  color: #072027;
+  background-color: white;
 }

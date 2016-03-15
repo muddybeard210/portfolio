@@ -17,6 +17,9 @@ Article.prototype.toHtml = function() {
 
 $('#projectBtn').on('click', function(e) {
   e.preventDefault();
+  $('#aboutBtn').removeClass('clicked');
+  $('#contactBtn').removeClass('clicked');
+  $('#projectBtn').addClass('clicked');
   $('.project').removeAttr('hidden');
   $('#about').attr('hidden', true);
   $('#contact').attr('hidden', true);
@@ -25,16 +28,22 @@ $('#projectBtn').on('click', function(e) {
 });
 $('#aboutBtn').on('click', function(e) {
   e.preventDefault();
+  $('#aboutBtn').addClass('clicked');
+  $('#contactBtn').removeClass('clicked');
+  $('#projectBtn').removeClass('clicked');
+  $('#about').removeAttr('hidden');
   $('.project').attr('hidden', true);
   $('#contact').attr('hidden', true);
-  $('#about').removeAttr('hidden');
 
 });
 $('#contactBtn').on('click', function(e) {
   e.preventDefault();
+  $('#aboutBtn').removeClass('clicked');
+  $('#contactBtn').addClass('clicked');
+  $('#projectBtn').removeClass('clicked');
+  $('#contact').removeAttr('hidden');
   $('.project').attr('hidden', true);
   $('#about').attr('hidden', true);
-  $('#contact').removeAttr('hidden');
 
 });
 
