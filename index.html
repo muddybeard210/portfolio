@@ -15,7 +15,7 @@
     <script id="articles-template" type="text/x-handlebars-template">
       <section id='test' class='project three columns container' hidden>
         <article class="projectPiece">
-          <a href='{{url}}'><img src='{{img}}'/></a>
+          <a href='{{url}}' target="_blank"><img src='{{img}}'/></a>
           <p class='projectTitle'>{{title}}</p>
           <p class='projectDesc'>{{description}}</p>
         </article>
@@ -25,10 +25,7 @@
   <body class='container'>
     <section id='head'>
       <header id= 'logo' class = ''><img class= 'twelve columns' src='https://images.unsplash.com/photo-1453282716202-de94e528067c?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=ac9b38e57a8a0724058cdcbe6a687aa8'>
-        <h1>This is my portfolio!</h1>
-        <div class="gitHub">
-          <a  href='https://github.com/muddybeard210' target='blank'>See my work on GitHub</a>
-        </div>
+        <h1>Sheridan-Smith Designs</h1>
 
 
       </header>
@@ -52,12 +49,15 @@
     </section>
     <section id='test' class='project three columns template container' hidden>
     </section>
+    <section id='articleCreation'>
+      <input id='articleTitle' placeholder="Title" required type="text" hidden>
+    </section>
 
     <section id='contact' hidden>
-      <a id='gitHubLink' href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2000px-Octicons-mark-github.svg.png" alt="" /></a>
-      <a class= 'square' href="#"><img src="http://vignette1.wikia.nocookie.net/tigerscurse/images/f/fc/Icon_facebook-b.png" alt="" /></a>
-      <a class= 'square' href="#"><img src="https://www.blockspring.com/assets/linkedin-mark-dark-eeabe25e798ab7fb1bc93f791fcdc2ff.png" alt="" /></a>
-
+      <a id='gitHubLink' href="https://github.com/muddybeard210" target = 'blank'><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2000px-Octicons-mark-github.svg.png" alt="" /></a>
+      <a id='facebook'href="https://www.facebook.com/profile.php?id=508924598" target="_blank"><img src="http://vignette1.wikia.nocookie.net/tigerscurse/images/f/fc/Icon_facebook-b.png" alt="" /></a>
+      <a id='linkIn' href="https://www.linkedin.com/in/matthew-sheridan-smith-06487aa5"  target = 'blank'><img src="https://www.blockspring.com/assets/linkedin-mark-dark-eeabe25e798ab7fb1bc93f791fcdc2ff.png" alt="" /></a>
+      <a id='emailLink' href="mailto:mattsmith203@hotmail.com"><img src='http://static.wixstatic.com/media/57fca7_dfb8a464c10f41109ef071bf6a62d485.png'></a>
     </section>
 
 

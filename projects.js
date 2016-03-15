@@ -14,10 +14,10 @@ var rawData = [
     publishedOn: '02-29-2016'
   },
   {
-    title: 'Guessing Game',
-    description: 'First project.  Simple guessing game done through JS.  Fair warning - Site uses prompts and alerts.  Proceed with caution.',
-    url: 'http://muddybeard210.github.io/guessing-game/',
-    img: 'imgs/guessing-game.png',
+    title: 'BusMall Tracker',
+    description: 'Vote tracking system.  Presents results after 15 votes and stores local data',
+    url: 'http://muddybeard210.github.io/BusMall/',
+    img: 'imgs/BusMall.png',
     publishedOn: '02-29-2016'
   }
 ];
