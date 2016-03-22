@@ -1,4 +1,4 @@
-var articles = [];
+// var articles = [];
 
 function Article (project) {
 
@@ -7,6 +7,8 @@ function Article (project) {
   this.img = project.img;
   this.description = project.description;
 };
+
+Article.all = [];
 
 Article.prototype.toHtml = function() {
   var theTemplateScript = $('#articles-template').text();
@@ -47,13 +49,27 @@ $('#contactBtn').on('click', function(e) {
 
 });
 
+Article.loadAll = function(rawData) {
 
-rawData.forEach(function(ele) {
-  articles.push(new Article(ele));
-});
+  rawData.forEach(function(ele) {
+    Article.all.push(new Article(ele));
+  });
+};
+Article.fetchAll = function() {
+  if (localStorage.rawData) {
+    Article.loadAll(JSON.parse(localStorage.rawData));
+    Article.all.forEach(function(a){
+      $('section.project').parent().append(a.toHtml());
+    });
+  } else {
+    $.getJSON('projects.json', function(data) {
+      Article.loadAll(data);
 
-articles.forEach(function(a){
-  $('section.project').parent().append(a.toHtml());
-});
-
+      localStorage.setItem('rawData', JSON.stringify(data));
+      Article.all.forEach(function(a){
+        $('section.project').parent().append(a.toHtml());
+      });
+    });
+  }
+};
 $('.template').hide();
