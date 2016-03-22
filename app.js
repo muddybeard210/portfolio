@@ -41,7 +41,7 @@ $('#contactBtn').on('click', function(e) {
   $('#aboutBtn').removeClass('clicked');
   $('#contactBtn').addClass('clicked');
   $('#projectBtn').removeClass('clicked');
-  $('#contact').removeAttr('hidden');
+  $('#contact').removeAttr('hidden').slideDown();
   $('.project').attr('hidden', true);
   $('#about').attr('hidden', true);
 
