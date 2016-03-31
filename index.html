@@ -14,16 +14,17 @@
     <link rel="stylesheet" href="styles/theme.css">
     <script src='https://code.jquery.com/jquery-2.2.1.min.js'></script>
     <script id="articles-template" type="text/x-handlebars-template">
-      <section id='test' class='project three columns container' hidden>
-        <article class="projectPiece">
+      <section id='test'  class='project three columns container offset-by-one column' data-category='{{category}}'>
+        <article  class="projectPiece">
           <a href='{{url}}' target="_blank"><img src='{{img}}'/></a>
           <p class='projectTitle'>{{title}}</p>
           <p class='projectDesc'>{{description}}</p>
+          <!-- <p class='projectCat'>Category: {{category}}</p> -->
         </article>
       </section>
     </script>
   </head>
-  <body class='container'>
+  <body>
     <section id='head'>
       <header id= 'logo' class = ''>
         <img class= 'twelve columns' src='https://images.unsplash.com/photo-1453282716202-de94e528067c?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=ac9b38e57a8a0724058cdcbe6a687aa8'>
@@ -32,35 +33,57 @@
 
       </header>
     </section>
-    <section id='navSection' class=''>
+    <section id='navSection' class='container'>
       <nav>
         <ul>
-          <li id='aboutBtn'class ='four columns button'>About Me</li>
-          <li id='projectBtn'class ='four columns button'>Projects</li>
-          <li id='contactBtn'class ='four columns button'>Contact</li>
+          <li id='aboutBtn'class ='three columns button'>About Me</li>
+          <li id='projectBtn'class ='three columns button'>Projects</li>
+          <li id='contactBtn'class ='three columns button'>Contact</li>
+          <li id='messingBtn'class='three columns button'>Messing Around</li>
         </ul>
       </nav>
     </section>
-    <section id='about' class='container' hidden>
-      <h1>This is me</h1>
-      <img id='mePic' src="imgs/mePic.jpg" alt="" />
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
+    <section id='about' class='container'>
+      <div class="eight columns offset-by-three">
+        <h1>This is me</h1>
+        <img id='mePic' src="imgs/mePic.jpg" alt="" />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
 
     </section>
-    <section id='test' class='project four columns template container' hidden>
+    <section id='messingAround' class='container'>
+      <form id=''>
+        <h1>Tell me your age and I will give you some fun facts!</h1>
+        <br>
+        <input type="text" name="age"><br>
+        <input type="submit" id='ageSub' value="submit">
+      </form>
+
     </section>
-    <section id='articleCreation'>
-      <input id='articleTitle' placeholder="Title" required type="text" hidden>
+    <section class='container'>
+      <select id='catFilter' class="" name="">
+        <option value=''>--Select Category to Filter--</option>
+
+      </select>
+      <section id='test' class='project four columns template offset-by-one column'>
+      </section>
+      <h1 id='totes' class=''></h1>
+
     </section>
 
-    <section id='contact' hidden>
-      <a id='gitHubLink' href="https://github.com/muddybeard210" target = 'blank'><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2000px-Octicons-mark-github.svg.png" alt="" /></a>
-      <a id='facebook'href="https://www.facebook.com/profile.php?id=508924598" target="_blank"><img src="http://vignette1.wikia.nocookie.net/tigerscurse/images/f/fc/Icon_facebook-b.png" alt="" /></a>
-      <a id='linkIn' href="https://www.linkedin.com/in/matthew-sheridan-smith-06487aa5"  target = 'blank'><img src="https://www.blockspring.com/assets/linkedin-mark-dark-eeabe25e798ab7fb1bc93f791fcdc2ff.png" alt="" /></a>
-      <a id='emailLink' href="mailto:mattsmith203@hotmail.com"><img src='http://static.wixstatic.com/media/57fca7_dfb8a464c10f41109ef071bf6a62d485.png'></a>
+
+    <section class='container' id='contact'>
+
+        <a id='gitHubLink' class = '' href="https://github.com/muddybeard210" target = 'blank'><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2000px-Octicons-mark-github.svg.png" alt="" /></a>
+        <a id='facebook'class = '' href="https://www.facebook.com/profile.php?id=508924598" target="_blank"><img src="http://vignette1.wikia.nocookie.net/tigerscurse/images/f/fc/Icon_facebook-b.png" alt="" /></a>
+        <a id='linkIn' class = '' href="https://www.linkedin.com/in/matthew-sheridan-smith-06487aa5"  target = 'blank'><img src="https://www.blockspring.com/assets/linkedin-mark-dark-eeabe25e798ab7fb1bc93f791fcdc2ff.png" alt="" /></a>
+        <a id='emailLink' class = '' href="mailto:mattsmith203@hotmail.com"><img src='http://static.wixstatic.com/media/57fca7_dfb8a464c10f41109ef071bf6a62d485.png'></a>
+
     </section>
+
+
 
 
 
