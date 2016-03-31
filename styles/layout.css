@@ -1,5 +1,5 @@
 section.project {
-  margin-top: 6em;
+  /*margin-top: 6em;*/
 }
 header div {
   margin-left: 4rem;
@@ -27,15 +27,19 @@ div a {
 footer p {
   text-align: center;
 }
+#pokeSelect {
+  position: absolute;
+  margin-top: 5em;
+
+}
 
 #about {
   position: absolute;
-  margin-top: 50rem;
   color: #FFFDF4;
 
 }
 #contact {
-  margin-top: 50rem;
+  /*margin-top: 50rem;*/
 }
 
 #contact a img {

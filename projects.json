@@ -1,6 +1,7 @@
 [
   {
   "title":"POMPEII",
+  "category":"games",
   "description":"Side scrolling game.  Defend the city of Pompeii",
   "url":"http://andrewpeterwatson.github.io/Swift",
   "img":"imgs/pompeii.png",
@@ -9,6 +10,7 @@
 
   {
   "title":"Cookie Stand",
+  "category":"retail",
   "description":"Simple site for a salmon cookie company",
   "url":"http://muddybeard210.github.io/cookie-stand/",
   "img":"imgs/cookie-stand.png",
@@ -17,6 +19,7 @@
 
   {
   "title":"BusMall Tracker",
+  "category":"survey",
   "description":"Vote tracking system.  Presents results after 15 votes and stores local data",
   "url":"http://muddybeard210.github.io/BusMall/",
   "img":"imgs/BusMall.png",
