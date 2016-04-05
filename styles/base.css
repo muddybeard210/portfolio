@@ -6,6 +6,7 @@
 }
 
 body {
+
   background-color: #072027;
   padding-bottom: 6rem;
   max-width: 100%;
@@ -26,7 +27,6 @@ ul {
 }
 ul li {
   text-align: center;
-  /*margin-top: 37rem;*/
   font-size: 3em;
   font-family: 'Varela Round', sans-serif;
   margin-top: .5em;
