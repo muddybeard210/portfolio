@@ -8,7 +8,6 @@
     $('#catFilter').fadeIn('slow');
     $('#about').hide();
     $('#contact').hide();
-    $('#accordion').accordion({collapsible: true, active: false});
     $('#totalProjects').text('Currently working on ' + repos.all.length + ' projects');
 
 
