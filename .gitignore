@@ -1,1 +1,4 @@
 node_modules
+githubToken.js
+.DS_Store
+jQuery_UI

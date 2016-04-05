@@ -18,6 +18,7 @@
   };
 
   $(document).ready(function() {
+    Article.fetchAll();
     $('.project').hide();
     $('#catFilter').hide();
     $('#about').hide();
@@ -25,6 +26,9 @@
     Article.categorize();
     Article.populateFilter();
     Article.handleCategoryFilter();
+    repos.requestRepos();
+
+
   });
 
   Article.loadAll = function(rawData) {

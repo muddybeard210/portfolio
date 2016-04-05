@@ -12,8 +12,12 @@
     <link rel="stylesheet" href="styles/module.css">
     <link rel="stylesheet" href="styles/state.css">
     <link rel="stylesheet" href="styles/theme.css">
+
+    <link rel="stylesheet" href="vendor/styles/jquery-ui.min.css">
     <script src='https://code.jquery.com/jquery-2.2.1.min.js'></script>
+    <script src='vendor/scripts/jquery-ui.min.js'></script>
     <script src="vendor/scripts/page.js"></script>
+    <script src='scripts/githubToken.js'></script>
 
 
     <script id="articles-template" type="text/x-handlebars-template">
@@ -25,6 +29,7 @@
         </article>
       </section>
     </script>
+
   </head>
   <body>
     <section id='head'>
@@ -58,6 +63,8 @@
       <section id='test' class='project four columns template offset-by-one column'>
       </section>
       <h1 id='totes' class=''></h1>
+      <h1 id='totalProjects' class='project'></h1>
+      <h1 class='project'>Here are some examples:</h1>
     </section>
     <section class='container' id='contact'>
 
@@ -69,6 +76,7 @@
 
     <script src = 'https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js'></script>
     <script src = '/scripts/app.js'></script>
+    <script src = '/scripts/repo.js'></script>
     <script src = '/scripts/articleController.js'></script>
     <script src = '/scripts/aboutController.js'></script>
     <script src = '/scripts/contactController.js'></script>
