@@ -39,3 +39,9 @@ ul li {
 h1 {
   color: #FFFDF4;
 }
+a {
+  text-decoration: none;
+}
+#totalProjects {
+  font-size: 2em;
+}

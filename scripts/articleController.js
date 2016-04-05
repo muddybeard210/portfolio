@@ -8,6 +8,7 @@
     $('#catFilter').fadeIn('slow');
     $('#about').hide();
     $('#contact').hide();
+    $('#totalProjects').text('Currently working on ' + repos.all.length + ' projects');
 
 
   };
