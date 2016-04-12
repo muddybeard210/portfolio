@@ -8,7 +8,7 @@
       url: 'https://api.github.com/users/muddybeard210/repos',
       type: 'GET',
       headers: {
-        'Authorization': 'token ' + repoToken
+        'Authorization': 'token ' + GITHUB_TOKEN
       },
       success: function(data, message, xhr) {
         console.log(data);
